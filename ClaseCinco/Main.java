@@ -13,5 +13,11 @@ public class Main {
         choferDos = new Chofer("Leo", "Montes", autoUno);
         System.out.println("La patrente del auto es:" + choferUno.verPatente());
 
+        //Instanciamos tipo perro
+        Perro perroUno = new Perro("Igor");
+        Persona persona = new Persona("Patricia", perroUno);
+
+        //Mostramos el mensaje
+        System.out.println("La persona tiene un perro, con el nombre: " + perroUno.getApodo());
     }
 }
