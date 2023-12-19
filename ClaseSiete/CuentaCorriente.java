@@ -1,7 +1,5 @@
 package corn.POO.ClaseSiete;
-
 import java.util.Objects;
-
 //Creamos la clase cuenta cuenta corriente
 public class CuentaCorriente extends Cuenta {
     //Variables de la clase
