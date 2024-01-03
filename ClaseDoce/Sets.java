@@ -14,7 +14,7 @@ public class Sets {
     public static void main(String[] args) {
         // Instanciamos la clase. Asi accedemos a la listas HashSet
         Sets Set = new Sets();
-
+        System.out.println("-- Agregar elementos al set HasSet");
         // Agregamos elementos a la lista
         Set.listaHashSet.add("Apple");
         Set.listaHashSet.add("Mango");
@@ -79,11 +79,24 @@ public class Sets {
 
         System.out.println("-- Set TreeSets: " + Set.listaTreeSet);
 
-        System.out.println("-- Prueba sets. Sets de datos");
+        System.out.println("-- Prueba sets. Sets de datos, agreagar cualquier de dato: ");
         Set.datos.add("Luis");
         Set.datos.add(123);
         for (Object iter: Set.datos) System.out.println(iter);
 
+        System.out.println("-- Filtrar en sets: ");
+        System.out.println(Set.listaHashSet);
+        // Buscar elemtnos en un set. Toca recorrer el set ya que este trabaja por nodos y no con indices
+        boolean encontrado = false;
+        String nombre = null;
+        Iterator it = Set.listaHashSet.iterator();
+        while (it.hasNext() && !encontrado){
+            nombre = (String) it.next();
+            if ("Mngo".equals(nombre)){  // Si el elemento no estra devolvera el ultimo elemento del set, si el sout esta afuer+
+                encontrado = true;
+               System.out.println("Se encontró en la lista. Valor: " + nombre);
+            }
+        }
 
 
     }

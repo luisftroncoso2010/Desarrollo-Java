@@ -1,8 +1,5 @@
 package corn.POO.ClaseDoce;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Maps {
     // Creamoa el arrays de tipo maps
@@ -34,6 +31,23 @@ public class Maps {
         System.out.println("-- TreeMap: " + maps.mapaTM);
 
 
+        // Iterar sobre un HashMap
+        System.out.println("-- Claves valor HashMap: ");
+        for(Integer clave: maps.mapaHM.keySet()){
+            String valor = maps.mapaHM.get(clave);
+            System.out.println(clave + " : " + valor);
+        }
 
+        //Iterar sobre LinkedHashMap
+        System.out.println("-- Claves valor LinkedHashMap: ");
+        for(Map.Entry<Integer, String> entrada : maps.mapaLHM.entrySet()){
+            Integer clave = entrada.getKey();
+            String valor = entrada.getValue();
+            System.out.println("Clave: " + clave + "\tValor: " + valor);
+        }
+
+        // Obtener y buscar elementos
+        System.out.println("-- Obtener y buscar elementos: ");
+        System.out.println(maps.mapaLHM.get(444));  // Si el indice no coindice con ealgo devuelve null
     }
 }

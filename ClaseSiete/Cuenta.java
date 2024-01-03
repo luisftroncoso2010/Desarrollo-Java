@@ -32,7 +32,6 @@ public class Cuenta {
         //Veriaficamos si es de la misma instancia
         if (this == o) return  true;
         //Verificamos si el objeto es pasado no es nulo y es de la misma clase
-
         if (o == null || getClass() != o.getClass()) return  false; //Usando getClass()
         if (o == null || (o instanceof Cuenta)) return false;// instanceof
         //Comaparamos si el numero de cuenta del objeto es igual al otro

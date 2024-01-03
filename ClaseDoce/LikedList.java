@@ -40,5 +40,8 @@ public class LikedList {
 
         // Buscando valores. Solo de devuelve datos booleanos
         System.out.println(lista.lista.contains(10));
+
+        // Buscar elementos
+        System.out.println("El elemento es: " + lista.lista.get(2));
     }
 }
