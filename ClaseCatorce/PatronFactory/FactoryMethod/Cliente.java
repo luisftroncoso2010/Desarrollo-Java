@@ -8,5 +8,9 @@ public class Cliente {
         Factory factoryB = new FactoryB();
         Producto productoB = factoryB.crearProductos();
         productoB.operacion();
+
+        Factory factoryC = new FactoryC();
+        Producto productoC = factoryC.crearProductos();
+        productoC.operacion();
     }
 }
