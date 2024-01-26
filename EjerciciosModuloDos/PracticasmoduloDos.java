@@ -21,6 +21,8 @@ public class PracticasmoduloDos {
             System.out.println("Ciclo while: ");
             x = false;
         }
+
+
         System.out.println("Valores del 0 al 9: ");
         int i = 0;
         while (i < 10){
