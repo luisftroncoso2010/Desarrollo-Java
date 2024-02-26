@@ -24,7 +24,7 @@ public class SingletonSeguridadHilos {
                     }
                 }
             }
-            // Aca retona la instancia dado que no esté vacia
+            // Aca retorna la instancia dado que no esté vacia
             return instance;
     }
 }
